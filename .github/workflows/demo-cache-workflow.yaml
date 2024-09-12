@@ -13,7 +13,7 @@ jobs:
           key: ${{ runner.os }}-primes
 
       - name: Generate Prime Numbers
-        if: steps.cache-prime.outputs.cache-hit != 'true
+        if: steps.cache-prime.outputs.cache-hit != 'true'
         run: |
           sleep 60
           echo "1 2 3 ..." > primes
